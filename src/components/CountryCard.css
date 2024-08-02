@@ -54,3 +54,57 @@
   line-height: 1.43;
   letter-spacing: 0.01071em;
 }
+
+
+/* Skeleton CSS */
+
+.skeleton-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skeleton-card {
+  position: relative;
+  border: none;
+  width: 264px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--card-background-color);
+}
+
+.skeleton-card-flag {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.11),
+    rgba(255, 255, 255, 0.11)
+  );
+  width: 100%;
+  height: 140px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.skeleton-card-info {
+  padding: 16px;
+}
+
+.skeleton-card-name {
+  font-size: 16px;
+  color: var(--heading-text-color);
+  margin-bottom: 0 0 5.6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.00938em;
+  font-weight: 400;
+}
+
+.skeleton-card-details {
+  color: var(--text-color);
+  margin-bottom: 2px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}

@@ -2,6 +2,7 @@ import "./HomePage.css";
 import Search from "./Search.jsx";
 import CountryCard from "./CountryCard.jsx";
 import Dropdown from "./Dropdown.jsx";
+import SkeletonCard from "./SkeletonCard.jsx";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -35,7 +36,7 @@ export default function HomePage() {
       </div>
       <div className="home-page-body">
         {isLoading ? (
-          <p>Loading countries...</p>
+          <SkeletonCard count={12} />
         ) : (
           data.map((country, i) => (
             <Link key={i} to={`/country/${country.cca2}`}>
@@ -47,3 +48,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+
