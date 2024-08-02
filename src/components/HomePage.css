@@ -1,0 +1,26 @@
+.home-page-wrapper {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-page-top {
+  width: 100%;
+  max-width: var(--container-width);
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page-body {
+  width: 100%;
+  max-width: var(--container-width);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 4rem 2rem;
+}
