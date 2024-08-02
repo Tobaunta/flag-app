@@ -1,4 +1,5 @@
 import "./CountryPage.css";
+import Chip from "./Chip";
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
@@ -108,7 +109,11 @@ export default function CountryPage() {
             <p className="border-countries">
               <span className="info-label">Border Countries: </span>
               <span className="info-value">
-                {countryData?.borders?.join(", ") || "N/A"}
+                {countryData?.borders?.length > 0
+                  ? countryData?.borders.map((border) => (
+                      <Chip key={border} border={border} />
+                    ))
+                  : "N/A"}
               </span>
             </p>
           </div>
