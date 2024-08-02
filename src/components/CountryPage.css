@@ -42,7 +42,6 @@
     align-items: flex-start;
     width: 100%;
     max-width: 800px;
-    gap: 4rem;
 }
 
 .country-info {
@@ -77,6 +76,7 @@ p {
     min-width: 64px;
     padding: 6px 8px;
     color: var(--heading-text-color);
+    border-radius: 5px;
 }
 
 .back:hover {
