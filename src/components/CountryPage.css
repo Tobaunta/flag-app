@@ -9,10 +9,13 @@
 
 .country-page-top {
     padding: 2.5rem 0;
+    margin-top: 32px;
+    padding: 0;
 }
 
 .country-page-body {
     display: flex;
+    margin-top: 3.5rem;
     gap: 64px;
 }
 
@@ -48,7 +51,7 @@
 }
 
 .border-countries {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 p {
@@ -56,16 +59,12 @@ p {
     line-height: 1.5;
     letter-spacing: 0.00938em;
     margin: 0 0 0.35em;
-    font-weight: 400;
+    font-weight: 600;
+    color: var(--heading-text-color);
 }
 
 .info-label {
-    color: var(--heading-text-color);
     font-weight: bold;
-}
-
-.info-value {
-    color: var(--text-color);
 }
 
 .back {
