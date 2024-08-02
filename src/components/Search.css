@@ -43,3 +43,9 @@
   color: var(--text-color);
   transform: translate(10px, -30%) scale(0.75);
 }
+
+@media screen and (max-width: 905px) {
+  .search input[type="text"] {
+    width: calc(100vw - 50px);
+  }
+}

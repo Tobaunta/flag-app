@@ -84,8 +84,8 @@ main {
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-@media screen and (max-width: 890px) {
-  .navbar {
-    flex-direction: column;
+@media screen and (max-width: 905px) {
+  .navbar-logo {
+    display: none;
   }
 }

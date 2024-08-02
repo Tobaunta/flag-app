@@ -11,10 +11,11 @@
 .home-page-top {
   width: 100%;
   max-width: var(--container-width);
-  height: 125px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .home-page-body {
@@ -25,4 +26,15 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem 2rem;
+}
+
+@media screen and (max-width: 905px) {
+  .home-page-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    height: auto;
+    height: 155px;
+  }
 }

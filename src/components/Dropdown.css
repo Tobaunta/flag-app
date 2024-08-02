@@ -12,7 +12,8 @@
   background-color: #fff;
   position: relative;
   width: 179px;
-  height: 56px;  
+  height: 56px;
+  padding: 10px;
   background-color: var(--background-color);
 }
 
@@ -96,4 +97,10 @@
 
 ul {
   list-style-type: none;
+}
+
+@media screen and (max-width: 905px) {
+  .dropdown-button {
+    width: calc(50vw - 25px);
+  }
 }
