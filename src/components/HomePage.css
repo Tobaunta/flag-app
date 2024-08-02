@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 15px 25px;
 }
 
 .home-page-top {
@@ -20,7 +21,8 @@
   width: 100%;
   max-width: var(--container-width);
   display: flex;
-  justify-content: flex-start;
+  align-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 4rem 2rem;
 }
