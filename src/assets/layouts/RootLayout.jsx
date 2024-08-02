@@ -11,7 +11,7 @@ export default function RootLayout() {
     );
     document.documentElement.style.setProperty(
       "--card-background-color",
-      darkMode ? "#46535e" : "#ffffff"
+      darkMode ? "#3e4a55" : "#ffffff"
     );
     document.documentElement.style.setProperty(
       "--hover-background-color",

@@ -3,6 +3,7 @@ import "./Dropdown.css";
 
 export default function Dropdown({ setRegion, region }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [regionSelected, setRegionSelected] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -25,8 +26,8 @@ export default function Dropdown({ setRegion, region }) {
   return (
     <div className={`dropdown ${isOpen ? "show" : ""}`} ref={ref}>
       <button className="dropdown-button" onClick={toggleDropdown}>
-        <label>Region</label>
-        <span id="dropdown-region">{region === "All" ? "All" : region.substr(7)}</span>
+        <label className={`dropdown-label ${isOpen || regionSelected ? "top" : ""}`}>Region</label>
+        <span className="dropdown-region">{region === "all" && regionSelected ? "All" : region.substr(7)}</span>
         <svg
           className="dropdown-arrow"
           focusable="false"
@@ -43,7 +44,8 @@ export default function Dropdown({ setRegion, region }) {
             className="dropdown-item"
             onClick={function () {
               toggleDropdown();
-              setRegion("All");
+              setRegion("all");
+              setRegionSelected(true);
             }}
           >
             All
@@ -53,6 +55,7 @@ export default function Dropdown({ setRegion, region }) {
             onClick={function () {
               toggleDropdown();
               setRegion("region/Africa");
+              setRegionSelected(true);
             }}
           >
             Africa
@@ -62,6 +65,7 @@ export default function Dropdown({ setRegion, region }) {
             onClick={function () {
               toggleDropdown();
               setRegion("region/America");
+              setRegionSelected(true);
             }}
           >
             America
@@ -71,6 +75,7 @@ export default function Dropdown({ setRegion, region }) {
             onClick={function () {
               toggleDropdown();
               setRegion("region/Asia");
+              setRegionSelected(true);
             }}
           >
             Asia
@@ -80,6 +85,7 @@ export default function Dropdown({ setRegion, region }) {
             onClick={function () {
               toggleDropdown();
               setRegion("region/Europe");
+              setRegionSelected(true);
             }}
           >
             Europe
@@ -89,6 +95,7 @@ export default function Dropdown({ setRegion, region }) {
             onClick={function () {
               toggleDropdown();
               setRegion("region/Oceania");
+              setRegionSelected(true);
             }}
           >
             Oceania
