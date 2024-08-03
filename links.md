@@ -1,2 +1,2 @@
 - [Github repository](https://github.com/Tobaunta/flag-app)
-- [Deployat projekt](https://flag-app.torkelsson.online)
+- [Deployat projekt](https://flag-app.tobaunta.torkelsson.online)
