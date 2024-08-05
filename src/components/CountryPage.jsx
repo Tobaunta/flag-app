@@ -47,81 +47,99 @@ export default function CountryPage() {
           BACK
         </Link>
       </div>
-      {countryData ? (
-        <div className="country-page-body">
-          {isLoading ? (
-            <div className="skeleton-flag"></div>
-          ) : (<img
+      <div className="country-page-body">
+        {isLoading ? (
+          <div className="skeleton-flag"></div>
+        ) : (
+          <img
             className="country-flag"
             src={countryData?.flags.svg}
             alt={countryData?.flags.alt}
           />
-          )}
-          <div className="country-info">
-            <h1 className="country-name">{isLoading ? "Name" : countryData?.name.common}</h1>
-            <div className="country-details">
-              <div>
-                <p>
-                  <span className="info-label">Population: </span>
-                  <span className="info-value">{isLoading ? "" : countryData?.population}</span>
-                </p>
-                <p>
-                  <span className="info-label">Region: </span>
-                  <span className="info-value"> {isLoading ? "" : countryData?.region}</span>
-                </p>
-                <p>
-                  <span className="info-label">Capital: </span>
-                  <span className="info-value"> {isLoading ? "" : countryData?.capital}</span>
-                </p>
-                <p>
-                  <span className="info-label">Native name: </span>
-                  <span className="info-value">
-                    {isLoading ? "" : countryData?.name.nativeName
-                      ? Object.values(countryData?.name.nativeName)[0].common
-                      : "N/A"}
-                  </span>
-                </p>
-              </div>
-              <div>
-                <p>
-                  <span className="info-label">Top level domain: </span>
-                  <span className="info-value"> {isLoading ? "" : countryData?.tld[0]}</span>
-                </p>
-                <p>
-                  <span className="info-label">Currencies: </span>
-                  <span className="info-value">
-                    {isLoading ? "" : countryData.currencies
-                      ? countryData?.currencies[
-                          Object.keys(countryData?.currencies)[0]
-                        ].name
-                      : "N/A"}
-                  </span>
-                </p>
-                <p>
-                  <span className="info-label">Languages: </span>
-                  <span className="info-value">
-                    {isLoading ? "" : countryData?.languages
-                      ? countryData?.languages.prs
-                      : "N/A"}
-                  </span>
-                </p>
-              </div>
+        )}
+        <div className="country-info">
+          <h1 className="country-name">
+            {isLoading ? "Name" : countryData?.name.common}
+          </h1>
+          <div className="country-details">
+            <div>
+              <p>
+                <span className="info-label">Population: </span>
+                <span className="info-value">
+                  {isLoading ? "" : countryData?.population}
+                </span>
+              </p>
+              <p>
+                <span className="info-label">Region: </span>
+                <span className="info-value">
+                  {" "}
+                  {isLoading ? "" : countryData?.region}
+                </span>
+              </p>
+              <p>
+                <span className="info-label">Capital: </span>
+                <span className="info-value">
+                  {" "}
+                  {isLoading ? "" : countryData?.capital}
+                </span>
+              </p>
+              <p>
+                <span className="info-label">Native name: </span>
+                <span className="info-value">
+                  {isLoading
+                    ? ""
+                    : countryData?.name.nativeName
+                    ? Object.values(countryData?.name.nativeName)[0].common
+                    : "N/A"}
+                </span>
+              </p>
             </div>
-            <p className="border-countries">
-              <span className="info-label">Border Countries: </span>
-              <span className="info-value">
-                {isLoading ? "" : countryData?.borders?.length > 0
-                  ? countryData?.borders.map((border) => (
-                      <Chip key={border} border={border} />
-                    ))
-                  : "N/A"}
-              </span>
-            </p>
+            <div>
+              <p>
+                <span className="info-label">Top level domain: </span>
+                <span className="info-value">
+                  {" "}
+                  {isLoading ? "" : countryData?.tld[0]}
+                </span>
+              </p>
+              <p>
+                <span className="info-label">Currencies: </span>
+                <span className="info-value">
+                  {isLoading
+                    ? ""
+                    : countryData.currencies
+                    ? countryData?.currencies[
+                        Object.keys(countryData?.currencies)[0]
+                      ].name
+                    : "N/A"}
+                </span>
+              </p>
+              <p>
+                <span className="info-label">Languages: </span>
+                <span className="info-value">
+                  {isLoading
+                    ? ""
+                    : countryData?.languages
+                    ? countryData?.languages.prs
+                    : "N/A"}
+                </span>
+              </p>
+            </div>
           </div>
+          <p className="border-countries">
+            <span className="info-label">Border Countries: </span>
+            <span className="info-value">
+              {isLoading
+                ? ""
+                : countryData?.borders?.length > 0
+                ? countryData?.borders.map((border) => (
+                    <Chip key={border} border={border} />
+                  ))
+                : "N/A"}
+            </span>
+          </p>
         </div>
-      ) : (
-        <p>No country data found.</p>
-      )}
+      </div>
     </div>
   );
 }

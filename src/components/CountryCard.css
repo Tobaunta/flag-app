@@ -55,6 +55,12 @@
   letter-spacing: 0.01071em;
 }
 
+@media screen and (max-width: 905px) {
+  .card {
+    width: 360px;
+  }
+}
+
 
 /* Skeleton CSS */
 

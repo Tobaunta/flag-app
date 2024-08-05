@@ -23,7 +23,7 @@
   max-width: var(--container-width);
   display: flex;
   align-content: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 4rem 2rem;
 }
@@ -36,5 +36,9 @@
     gap: 1rem;
     height: auto;
     height: 155px;
+  }
+
+  .home-page-body {
+    gap: 2rem;
   }
 }
