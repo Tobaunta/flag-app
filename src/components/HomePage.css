@@ -28,6 +28,13 @@
   gap: 4rem 2rem;
 }
 
+a {
+  display: flex;
+  flex-basis: calc(25% - 3rem);
+  flex-grow: 1;
+  max-width: 25%;
+}
+
 @media screen and (max-width: 905px) {
   .home-page-top {
     flex-direction: column;
@@ -40,5 +47,9 @@
 
   .home-page-body {
     gap: 2rem;
+  }
+
+  a {
+    max-width: 100%;
   }
 }
