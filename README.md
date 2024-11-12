@@ -3,12 +3,12 @@
 # Techovers Flag-Challenge! 🐺
 
 Design to go from:
-[Ljus-Tema](./design/Desktop-light.png)
-[Mörkt-Tema](./design/Desktop-dark.png)
+[Light-Theme](./design/Desktop-light.png)
+[Dark-Theme](./design/Desktop-dark.png)
 
 ## Challenge
 
-The challenge is to integrate [REST-ländernas API](https://restcountries.com) and use the data to display the countries to look like the design images.
+The challenge is to integrate [REST-Countries API](https://restcountries.com) and use the data to display the countries to look like the design images.
 
 The app needs to:
 
