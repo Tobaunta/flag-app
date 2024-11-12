@@ -1,42 +1,42 @@
 [Live Demo](https://flag-app.tobaunta.torkelsson.online)
 
-# Techovers Flag-Utmaning! 🐺
+# Techovers Flag-Challenge! 🐺
 
-Kolla in design för hur projektet ska se ut:
+Design to go from:
 [Ljus-Tema](./design/Desktop-light.png)
 [Mörkt-Tema](./design/Desktop-dark.png)
 
-## Utmaningen
+## Challenge
 
-Din utmaning är att integrera med [REST-ländernas API](https://restcountries.com)för att hämta landsdata och visa dem som i designerna.
+The challenge is to integrate [REST-ländernas API](https://restcountries.com) and use the data to display the countries to look like the design images.
 
-Dina användare ska kunna:
+The app needs to:
 
-- Se alla länder från API:et på startsidan
-- Söka efter ett land med hjälp av ett input-fält
-- Filtrera länder efter region
-- Klicka på ett land för att se mer detaljerad information på en separat sida
-- Klicka igenom till grannländerna på detaljsidan
-- Växla färgschemat mellan ljus och mörk läge.
+- See all countries from the API on the home page
+- Search for a country using an input field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to neighboring countries on the details page
+- Toggle the color scheme between light and dark mode.
 
-## Navigera genom projektet
+## Navigate through the project
 
-Din uppgift är att bygga projektet enligt designerna i mappen `/design`.
+Your task is to build the project according to the designs in the folder `/design`.
 
-I den här utmaningen hittar du mobil- och desktop-designer i ljusa och mörka färgscheman för båda sidorna.
+In this challenge, you'll find mobile and desktop designs in light and dark color schemes for both pages.
 
-Det finns också en fil `style-guide.md` som innehåller den information du behöver, såsom färgpalett och typsnitt.
+There is also a `style-guide.md` file that contains the information you need, such as color palette and fonts.
 
-## Uppstarts Guide 🌟
+## Startup Guide 🌟
 
-1. Titta igenom designerna för att börja planera hur du ska ta itu med projektet. Detta steg är avgörande för att hjälpa dig tänka framåt för styling och att skapa återanvändbara stilar.
+1. Look through the designs to start planning how to tackle the project. This step is crucial to help you think ahead for styling and to create reusable styles.
 
-2. Skapa en komponent för dina kort som flaggorna och informationen om landet ska vara satta på.
+2. Create a component for your cards on which the flags and information about the country should be set.
 
-3. Använd dig av props för att stoppa in information som invånare, huvudstad osv i kort-komponenten.
+3. Use props to insert information such as residents, capital, etc. into the map component.
 
-4. När du hämtar datan om länderna så kan du använda dig av Fetch API eller axios i en kombination med React hooken - useEffect.
+4. When you retrieve the data about the countries, you can use the Fetch API or axios in combination with the React hook - useEffect.
 
-5. Skapa funktionalitet för att visa land informationen när användaren klickar på ett land från listan. Du kan använda Reacts state-funktionalitet för att hantera vilket land som är valt.
+5. Create functionality to display the country information when the user clicks on a country from the list. You can use React's state functionality to manage which country is selected.
 
-**Stort Lycka till** 🐺
+**Great Luck** 🐺
